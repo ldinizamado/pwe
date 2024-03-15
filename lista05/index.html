@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        :target {
+            scroll-margin-top: 60px;
+        }
+
+        .ancora {
+            color: brown;
+        }
+
+        .ancora:hover {
+            color: greenyellow;
+            transition-duration: .5s;
+            font-size: 15px;
+        }
+
+        h1,
+        h2 {
+            color: orangered;
+        }
+
+        h3,
+        h4 {
+            color: orange;
+        }
+
+        p,
+        li {
+            color: white;
+        }
+
+        .link {
+            color: black;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            color: rgb(233, 39, 39);
+            transition-duration: .5s;
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgb(59, 59, 59);
+            width: 100%;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+
+<body style="background-image: linear-gradient(to top right, rgb(20, 194, 20), rgb(63, 63, 243), rgb(241, 241, 111));">
+    <nav style="position: absolute;">
+        <ul
+            style="margin: 0; display: flex; flex-direction: row; align-items: center; list-style: none; position: fixed; width: 100%; top: 0; background-color: rgb(59, 59, 59); padding: 15px 20px; width: 100%;">
+            <li style="margin-right: 20px; font-weight: bold;">
+                <a class="ancora" style="text-decoration: none;" href="#nome">Nome</a>
+            </li>
+            <li style="margin-right: 20px; font-weight: bold;">
+                <a class="ancora" style="text-decoration: none;" href="#idade">Idade</a>
+            </li>
+            <li style="margin-right: 20px; font-weight: bold;">
+                <a class="ancora" style="text-decoration: none;" href="#foto">Foto</a>
+            </li>
+            <li style="margin-right: 20px; font-weight: bold;">
+                <a class="ancora" style="text-decoration: none;" href="#escolaridade">Escolaridade</a>
+            </li>
+            <li style="margin-right: 20px; font-weight: bold;">
+                <a class="ancora" style="text-decoration: none;" href="#experiencias">Experiências Profissionais</a>
+            </li>
+            <li style="margin-right: 20px; font-weight: bold;">
+                <a class="ancora" style="text-decoration: none;" href="#hobbies">Hobbies</a>
+            </li>
+            <li style="margin-right: 20px; font-weight: bold;">
+                <a class="ancora" style="text-decoration: none;" href="#links">Links</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1 id="nome" style="text-align: center; margin-top: 200px; text-decoration: underline;">LUCAS DINIZ AMADO</h1>
+
+    <section style="margin: 50px 50px;">
+        <h2 id="idade">Idade</h2>
+        <br>
+        <h3>Nascimento:</h3>
+        <br>
+        <p>09/08/1997</p>
+        <br>
+        <p>26 anos</p>
+        <br>
+        <hr>
+    </section>
+
+    <section style="margin: 50px 50px;">
+        <h2 id="foto">Foto</h2>
+        <img style="width: 20%; height: 20%; margin: 50px 0 50px 0; border-radius: 30%;" src="lucas.jpg"
+            alt="Foto do autor, Lucas, em Florença, Itália">
+        <br>
+        <hr>
+    </section>
+
+    <section style="margin: 100px 50px;">
+        <h2 id="escolaridade">Escolaridade</h2>
+        <br>
+        <ul style="list-style:inside;">
+            <li>
+                Graduação em Sistemas para Internet;
+            </li>
+            <li>
+                Pós-graduado em Tradução Audiovisual de Inglês;
+            </li>
+            <li>
+                Bacharel em Tradução de Inglês.
+            </li>
+        </ul>
+        <br>
+        <hr>
+    </section>
+
+    <section style="margin: 100px 50px;">
+        <h2 id="experiencias">Experiências Profissionais</h2>
+        <br>
+        <h3>Tradutor</h3>
+        <br>
+        <h4>BYJU'S Learning Brasil</h4>
+        <br>
+        <ul style="list-style:inside;">
+            <li>
+                Tradução de documentos;
+            </li>
+            <li>
+                Tradução de aulas;
+            </li>
+            <li>
+                Gravação de conteúdo;
+            </li>
+            <li>
+                Edição de imagens e GIFs;
+            </li>
+            <li>
+                Tradução para marketing e outros;
+            </li>
+            <li>
+                Tradução de códigos.
+            </li>
+        </ul>
+        <br>
+        <hr>
+    </section>
+
+    <section style="margin: 100px 50px;">
+        <h2 id="hobbies">Hobbies</h2>
+        <br>
+        <ul style="list-style:inside;">
+            <li>
+                Filmes;
+            </li>
+            <li>
+                Jogos;
+            </li>
+            <li>
+                Academia;
+            </li>
+            <li>
+                Escrita.
+            </li>
+        </ul>
+        <br>
+        <hr>
+    </section>
+
+    <section style="margin: 100px 50px;">
+        <h2 id="links">Links</h2>
+        <br>
+        <h3>Seção dedicada aos links de interesse do autor</h3>
+        <br>
+        <p>Link para o <a class="link" style="font-weight: bold;" href="https://github.com/ldamado"
+                target="_blank">GitHub</a> do autor</p>
+        <br>
+        <p>Link para o <a class="link" style="font-weight: bold;" href="https://linkedin.com/in/lucas-diniz-amado"
+                target="_blank">LinkedIn</a> do autor</p>
+        <br>
+        <p>Link para algumas <a class="link" style="font-weight: bold;"
+                href="https://open.spotify.com/playlist/05PEVxwhdziuL9SG0FJra2?si=5287412174654a46"
+                target="_blank">músicas</a> que o autor gosta</p>
+        <br>
+        <p>Uma delas é:</p>
+        <br>
+        <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/track/4U45aEWtQhrm8A5mxPaFZ7?utm_source=generator&theme=0" width="50%"
+            height="100" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <br>
+        <p>Link para um <a class="link" style="font-weight: bold;"
+                href="https://youtu.be/2T7wSwQtkts?si=Rsor0nrGHiXAkhTf" target="_blank">vídeo</a> que o autor gosta.</p>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2T7wSwQtkts?si=TdlIJD8MBBr9kQag"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </section>
+
+    <footer>&copy;Lucas Diniz Amado - PWE IFTM</footer>
+</body>
+
+</html>
