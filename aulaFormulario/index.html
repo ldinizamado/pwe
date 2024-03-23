@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="txtNome">Nome:</label>
+        <input id="txtNome" type="text" placeholder="Digite seu nome">
+        <br><br>
+        <label for="senha">Senha:</label>
+        <input id="senha" type="password" placeholder="De 5 a 10 caracteres">
+        <br><br>
+        <label for="data">Data de nascimento:</label>
+        <input id="data" type="date">
+        <br><br>
+        <label for="numero">Número da casa:</label>
+        <input id="numero" type="number" min="0" max="9998" step="2">
+        <br><br>
+        
+        <fieldset>
+            <legend>Contato</legend>
+            <label for="email">E-mail:</label>
+            <input id="email" type="email" placeholder="seuemail@email.com">
+            <br><br>
+            <label for="senha">Site:</label>
+            <input id="senha" type="url" placeholder="http//www.seusite.com.br">
+        </fieldset>
+        <br><br>
+        <label for="estado">Estado</label>
+        <select id="estado">
+            <option>MG</option>
+            <option>SP</option>
+            <option>RJ</option>
+        </select>
+        <br><br>
+        <label>Sexo:</label>
+        <input id="masc" type="radio" name="sexo">
+        <label for="masc">Masculino</label>
+
+        <input id="fem" type="radio" name="sexo">
+        <label for="fem">Feminino</label>
+        <br><br>
+
+        <label for="">Linguagem de programação (domínio):</label>
+        <br>
+        <input id="language1" type="checkbox">
+        <label for="language1">C</label>
+        <br>
+        <input id="language2" type="checkbox">
+        <label for="language2">Java</label>
+        <br>
+        <input id="language3" type="checkbox">
+        <label for="language3">JavaScript</label>
+
+    </form>
+</body>
+
+</html>
