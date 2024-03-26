@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+</head>
+
+<body>
+    <h1>Cadastro de Clientes</h1>
+    <br>
+    <h3 style="color:red;">Todos os campos são de preenchimento obrigatório</h2>
+    <form>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="nome">Nome:</label>
+            <br>
+            <input type="text" id="nome" placeholder="Nome completo" required>
+            <br><br>
+            <label for="data">Data de nascimento:</label>
+            <br>
+            <input type="date" id="data" required>
+            <br><br>
+            <label for="sexo" required>Sexo:</label>
+            <br>
+            <input id="masc" type="radio" name="sexo" required>
+            <label for="masc">Masculino</label>
+    
+            <input id="fem" type="radio" name="sexo">
+            <label for="fem">Feminino</label>
+            <!-- <select id="sexo" required>
+                <option></option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select> -->
+            <br><br>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Informações de contato</legend>
+            <label for="email">E-mail:</label>
+            <br>
+            <input id="email" type="email" required>
+            <br><br>
+            <label for="telefone">Telefone celular:</label>
+            <br>
+            <input type="tel" id="telefone" placeholder="Apenas números (máx:9)" maxlength="9" required>
+            <br><br>
+            <label for="senha">Website pessoal/profissional:</label>
+            <br>
+            <input id="senha" type="url" placeholder="https://www.seusite.com.br" required>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Localização</legend>
+            <label for="endereco">Endereço:</label>
+            <br>
+            <input type="text" id="endereco" required>
+            <br><br>
+            <label for="numero">Numero:</label>
+            <br>
+            <input style="width: 8%;" type="number" id="numero" min="1" max="9999" maxlength="9999" placeholder="(Valor entre 1 e 9999)" required>
+            <br><br>
+            <label for="cidade">Cidade:</label>
+            <br>
+            <input type="text" id="cidade" required>
+            <br><br>
+            <label for="estado">Estado:</label>
+            <br>
+            <select id="estado" required>
+                <br><br>
+                <option></option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </fieldset>
+        <br><br>
+        <input type="submit" id="enviar" value="Cadastrar">
+        <input type="reset" id="reset" value="Limpar">
+    </form>
+</body>
+
+</html>
