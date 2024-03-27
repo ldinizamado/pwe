@@ -45,7 +45,7 @@
             <br><br>
             <label for="telefone">Telefone celular:</label>
             <br>
-            <input type="tel" id="telefone" placeholder="Apenas números (máx:9)" maxlength="9" required>
+            <input type="tel" id="telefone" placeholder="Apenas números (máx:9)" minlength="9" maxlength="9" pattern="[0-9]{9}" required>
             <br><br>
             <label for="senha">Website pessoal/profissional:</label>
             <br>
@@ -60,7 +60,7 @@
             <br><br>
             <label for="numero">Numero:</label>
             <br>
-            <input style="width: 8%;" type="number" id="numero" min="1" max="9999" maxlength="9999" placeholder="(Valor entre 1 e 9999)" required>
+            <input style="width: 8%;" type="number" id="num" min="1" max="9999" maxlength="4" pattern="[0-9]{4}" placeholder="(Valor entre 1 e 9999)" required>
             <br><br>
             <label for="cidade">Cidade:</label>
             <br>
